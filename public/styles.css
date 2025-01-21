@@ -1,0 +1,203 @@
+body {
+  background-color: #336651;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: sans-serif;
+  max-width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+p {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 90px;
+  text-align: center;
+}
+
+
+/* For aligning the button groups*/
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+  align-items: center;
+  justify-content: center;
+}
+
+.button-row {
+  display: flex;
+  gap: 10px; 
+}
+
+.results-container {
+  padding: 5px;
+  border-radius: 100px;
+}
+
+
+/* For displaying each button on the calculator*/
+.button-name {
+  width: 70px;
+  height: 70px;
+  align-items: center;
+  appearance: none;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow:
+    rgba(45, 35, 66, 0.2) 0 2px 4px,
+    rgba(45, 35, 66, 0.15) 0 7px 13px -3px,
+    #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: crosshair;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    box-shadow 0.15s,
+    transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+
+.button-name:focus {
+  box-shadow:
+    #d6d6e7 0 0 0 1.5px inset,
+    rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+    #d6d6e7 0 -3px 0 inset;
+}
+
+.button-name:hover {
+  box-shadow:
+    rgba(45, 35, 66, 0.3) 0 4px 8px,
+    rgba(45, 35, 66, 0.2) 0 7px 13px -3px,
+    #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-name:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+
+/* For displaying the clear button */
+.clr {
+  width: 215px;
+  height: 70px;
+  align-items: center;
+  appearance: none;
+  background-color: #15aa6c;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow:
+    rgba(45, 35, 66, 0.2) 0 2px 4px,
+    rgba(45, 35, 66, 0.15) 0 7px 13px -3px,
+    #0f7e50 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: crosshair;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    box-shadow 0.15s,
+    transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+}
+
+.clr:focus {
+  box-shadow:
+    #15aa6c 0 0 0 1.5px inset,
+    rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+    #15aa6c 0 -3px 0 inset;
+}
+
+.clr:hover {
+  box-shadow:
+    rgba(45, 35, 66, 0.3) 0 4px 8px,
+    rgba(45, 35, 66, 0.2) 0 7px 13px -3px,
+    #15aa6c 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.clr:active {
+  box-shadow: #15aa6c 3px 7px inset;
+  transform: translateY(2px);
+}
+
+
+/* For displaying the output*/ 
+.input {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 1%;
+ width: 280px;
+ height: 60px;
+ line-height: 28px;
+ padding: 0 1rem;
+ padding-left: 1rem;
+ border: 2px solid transparent;
+ border-radius: 8px;
+ background-color: #f3f3f4;
+ color: #0d0c22;
+ transition: .3s ease;
+ font-size: 30px;
+}
+
+.input::placeholder {
+ color: #9e9ea7;
+}
+
+
+
+/* For displaying the history of user equations*/
+#history {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 100;
+  padding: 10px;
+  z-index: 1000; 
+}
+
+
+
